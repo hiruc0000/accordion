@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Accordion</title>
+    <link rel="stylesheet" href="./Accordion01.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="accordion">
+            <input id="acc01" type="checkbox" name="accordion">
+            <label for="acc01">CSSでのアコーディオンUI実装</label>
+            <div class="content">
+                <p>アコーディオンUIをHTML/CSSで実装するならradioボタンよりもcheckboxの方が適していると思います。radioボタンでは一度セレクトすると複数あるボタンのいずれかひとつが常に選択された状態になってしまいます。<br>
+                    したがって一度アコーディオンを開くといずれか一つが常に開いた状態になってしまいます。ですのでcheckboxのオンオフにより開閉を制御する方が向いていると思います。</p>
+                <p>基本的にはHTML/CSSでのtab実装と同様です。<br>
+                    CSSの書き方が多少違いますが、考え方は同様ではないかと思います。</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input id="acc02" type="checkbox" name="accordion">
+            <label for="acc02">開閉アニメーション</label>
+            <div class="content">
+                <p>開閉アニメーションは<code>transition</code>でアニメーションさせるプロパティを指定しているのみです。<br>
+                    このサンプルはアコーディオンの内容にボーダーを引いたのでその部分の動きに違和感が残っており、解決を試みようと試してみたのですが上手く解決出来ていない状態です。</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input id="acc03" type="checkbox" name="accordion">
+            <label for="acc03">HTMLでのアコーディオン実装</label>
+            <div class="content">
+                <p>checkboxを使わなくてもHTMLで<code>details</code>と<code>summary</code>で実装っ可能なようですが、現状どのような手法で実装するのが一般的なのかはわかりません。</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

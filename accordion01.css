@@ -1,0 +1,92 @@
+/* style */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto 0;
+}
+
+.accordion {
+  max-width: 500px;
+  margin: 0 auto 1px;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion label {
+  position: relative;
+  display: block;
+  line-height: 2.5rem;
+  margin: 0 0 -3px 0;
+  padding: 0 1rem;
+  color: white;
+  background: linear-gradient(to bottom left, #99a9ee, #01038f);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordion label::after {
+  content: '+';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.accordion .content {
+  max-height: 0;
+  border: 2px solid #01038f;
+  overflow: hidden;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: max-height 0.4s, transform 0.4s;
+}
+
+.accordion .content p {
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.9rem;
+  list-style-position: inside;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+code {
+  padding: 3px;
+  border-radius: 3px;
+  background-color: gray;
+  color: white;
+}
+
+/* checked */
+.accordion input[type=checkbox]:checked ~ label {
+  margin: 0 0 1px 0;
+}
+
+.accordion input[type=checkbox]:checked ~ .content {
+  max-height: 30rem;
+  margin: 0 0 1px 0;
+  transform: scaleY(1);
+  border: 2px solid #01038f;
+  border-radius: 5px;
+}
+
+.accordion input[type=checkbox]:checked ~ label::after {
+	transform: rotate(225deg);
+}
+
+.accordion input[type=checkbox]:checked ~ .content p,
+.accordion input[type=checkbox]:checked ~ .content ul,
+.accordion input[type=checkbox]:checked ~ .content ul li {
+  opacity: 1;
+}
