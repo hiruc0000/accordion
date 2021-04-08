@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Accordion</title>
+    <link rel="stylesheet" href="./jsaccordion.css">
+</head>
+
+<body>
+    <section class="container">
+        <h4 class="title">JavaScriptでのアコーディオン実装</h4>
+        <div class="acco-content">
+            <p>JavaScriptでは各タイトルにクリックイベントを与えクラスの付与除去を行ってます。クリックする毎にクラスが付与されたり除去されるという処理が必要なので<code>classList.add()</code>や<code>classList.remove()</code>を使うよりも<code>toggle</code>を使った方が適しています。</p>
+        </div>
+
+        <h4 class="title">開閉アニメーション</h4>
+        <div class="acco-content">
+            <p>特別な事はしていません。<br>
+                <code>checkbox</code>で使用したものと似たような動作をさせています。</p>
+        </div>
+
+        <h4 class="title">title3</h4>
+        <div class="acco-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla tortor, a posuere urna. Praesent urna quam, semper ut ultricies et, mollis ac elit. Suspendisse tempor, lacus id consectetur sagittis, lorem
+                odiodignissimnulla, a condimentum sem neque sed ligula. Maecenas id risus eros, eget porttitor metus. Quisque pellentesque neque dignissim nisl pellentesque vitae tempus urna eleifend. Nullam egestas, neque id placerat luctus, nibh
+                velit pharetra nulla, vel pretium justo massa ut elit. Vivamus nec auctor nunc.</p>
+        </div>
+    </section>
+
+    <script src="./jsaccordion.js"></script>
+</body>
+
+</html>
