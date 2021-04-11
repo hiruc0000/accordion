@@ -14,7 +14,7 @@ body {
   margin: 0 0 2px 0;
   padding: 0 1rem 0 1rem;
   line-height: 2.5rem;
-  background: linear-gradient(to bottom left, #9aaaee, #01038f);
+  background: linear-gradient(to top right, #ff7c8b, #850110);
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -37,7 +37,7 @@ body {
   margin: 0 0 2px 0;
   max-height: 0;
   color: black;
-  background-color: #ccd4f5;
+  background-color: #f7d1d5;
   border-radius: 5px;
   overflow: hidden;
   transform: translateY(0);
